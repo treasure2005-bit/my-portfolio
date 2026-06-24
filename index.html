@@ -27,7 +27,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .nav-links a:hover{color:var(--yellow)}
 .nav-cta{background:var(--yellow);color:var(--dark);border:none;padding:10px 24px;border-radius:50px;font-size:13px;font-weight:700;cursor:pointer;font-family:'Poppins',sans-serif;transition:all 0.2s;text-decoration:none}
 .nav-cta:hover{background:var(--yellow-light)}
-.hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:120px 60px 80px;position:relative;z-index:1;gap:60px}
+.hero{display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:120px 60px 80px;position:relative;z-index:1;gap:60px}
 .hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(251,191,36,0.1);border:1px solid rgba(251,191,36,0.3);color:var(--yellow);padding:7px 16px;border-radius:50px;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:28px}
 .hero h1{font-size:clamp(48px,5.5vw,76px);font-weight:800;line-height:1.0;letter-spacing:-0.03em;color:var(--white)}
 .hero h1 .accent{color:var(--yellow);display:block}
@@ -46,7 +46,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .photo-badge{position:absolute;bottom:20px;right:-10px;background:rgba(13,10,26,0.92);backdrop-filter:blur(20px);border:1px solid rgba(251,191,36,0.3);border-radius:16px;padding:14px 18px;text-align:center;min-width:110px}
 .photo-badge-num{font-size:28px;font-weight:800;color:var(--yellow)}
 .photo-badge-txt{font-size:10px;color:var(--text-dim);text-transform:uppercase;letter-spacing:0.07em;margin-top:2px;font-weight:500}
-section{padding:110px 60px;position:relative;z-index:1}
+section{padding:80px 60px;position:relative;z-index:1}
 .container{max-width:1100px;margin:0 auto}
 .eyebrow{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--yellow);background:rgba(251,191,36,0.1);border:1px solid rgba(251,191,36,0.25);padding:5px 14px;border-radius:50px;margin-bottom:18px}
 .section-title{font-size:clamp(34px,4vw,54px);font-weight:800;letter-spacing:-0.02em;line-height:1.05;color:var(--white);margin-bottom:14px}
@@ -113,13 +113,16 @@ footer{padding:40px 60px;border-top:1px solid rgba(124,58,237,0.15);display:flex
   nav{padding:16px 20px}.nav-links{display:none}
   .hero{grid-template-columns:1fr;padding:100px 20px 60px;text-align:center}.hero-right{display:none}
   .hero-btns{justify-content:center}
-  section{padding:70px 20px}
+  section{padding:50px 20px}
   .about-grid,.contact-grid{grid-template-columns:1fr;gap:40px}
   .projects-grid{grid-template-columns:1fr}
   .tools-grid{grid-template-columns:repeat(3,1fr)}
   footer{padding:30px 20px;flex-direction:column;text-align:center}
   .work-header{flex-direction:column;align-items:flex-start}
 }
+.whatsapp-float{position:fixed;bottom:28px;right:28px;z-index:999;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,0.4);transition:transform 0.2s,box-shadow 0.2s;text-decoration:none}
+.whatsapp-float:hover{transform:scale(1.1);box-shadow:0 6px 28px rgba(37,211,102,0.6)}
+.whatsapp-float i{font-size:28px;color:#fff}
 </style>
 </head>
 <body>
@@ -144,6 +147,9 @@ footer{padding:40px 60px;border-top:1px solid rgba(124,58,237,0.15);display:flex
     <p class="hero-role">Kampala, Uganda &mdash; Creating for the world</p>
     <p class="hero-sub">I design digital experiences that are intuitive, beautiful, and built to work. From research and wireframes to shipped products.</p>
     <div class="hero-btns">
+      <a href="assets/Ankunda_Treasure_Latifah_CV.pdf" download class="btn-secondary">
+  <i class="fa-solid fa-download"></i> Download CV
+</a>
       <a href="https://treasure2005-bit.github.io/mgb/" target="_blank" class="btn-primary">View my work</a>
       <a href="#work" class="btn-secondary">My projects</a>
       <a href="#contact" class="btn-outline">Let&apos;s talk</a>
@@ -289,7 +295,7 @@ footer{padding:40px 60px;border-top:1px solid rgba(124,58,237,0.15);display:flex
       </div>
       <!-- <a href="https://treasure2005-bit.github.io/mgb/" target="_blank" class="view-work-btn"> -->
         <!-- <i class="fa-solid fa-arrow-up-right-from-square"></i> View my full work -->
-      </a>
+      <!-- </a> -->
     </div>
     <div class="projects-grid">
       <div class="project-card">
@@ -337,6 +343,11 @@ footer{padding:40px 60px;border-top:1px solid rgba(124,58,237,0.15);display:flex
             <span class="project-pill">Express</span>
             <span class="project-pill">MongoDB</span>
             <span class="project-pill">Pug templating</span>
+          </div>
+          <div style="margin-top:14px;">
+            <a href="#" target="_blank" class="view-work-btn" style="font-size:12px;padding:8px 18px;">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> View project
+            </a>
           </div>
         </div>
       </div>
@@ -401,7 +412,9 @@ footer{padding:40px 60px;border-top:1px solid rgba(124,58,237,0.15);display:flex
     </div>
   </div>
 </section>
-
+<a href="https://wa.me/256763177659" target="_blank" class="whatsapp-float">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
 <footer>
   <span class="footer-logo"><span></span></span>
   <span class="footer-text">Designed &amp; built by Ankunda Treasure Latifah &copy; 2025</span>
